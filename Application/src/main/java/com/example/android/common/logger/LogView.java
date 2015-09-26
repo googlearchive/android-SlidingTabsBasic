@@ -46,8 +46,6 @@ public class LogView extends TextView implements LogNode {
      */
     @Override
     public void println(int priority, String tag, String msg, Throwable tr) {
-
-        
         String priorityStr = null;
 
         // For the purposes of this View, we want to print the priority as readable text.
@@ -92,13 +90,13 @@ public class LogView extends TextView implements LogNode {
 
         // In case this was originally called from an AsyncTask or some other off-UI thread,
         // make sure the update occurs within the UI thread.
-        ((Activity) getContext()).runOnUiThread( (new Thread(new Runnable() {
+        ((Activity) getContext()).runOnUiThread(new Runnable() {
             @Override
             public void run() {
                 // Display the text we just generated within the LogView.
                 appendToLog(outputBuilder.toString());
             }
-        })));
+        });
 
         if (mNext != null) {
             mNext.println(priority, tag, msg, tr);
