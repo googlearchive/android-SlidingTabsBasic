@@ -131,7 +131,7 @@ public class SlidingTabLayout extends HorizontalScrollView {
     /**
      * Set the {@link ViewPager.OnPageChangeListener}. When using {@link SlidingTabLayout} you are
      * required to set any {@link ViewPager.OnPageChangeListener} through this method. This is so
-     * that the layout can update it's scroll position correctly.
+     * that the layout can update its scroll position correctly.
      *
      * @see ViewPager#setOnPageChangeListener(ViewPager.OnPageChangeListener)
      */
