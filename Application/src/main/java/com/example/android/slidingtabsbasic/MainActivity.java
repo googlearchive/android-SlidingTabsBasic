@@ -34,7 +34,7 @@ import com.example.android.common.logger.MessageOnlyLogFilter;
  * {@link android.support.v4.app.Fragment} which can display a view.
  * <p>
  * For devices with displays with a width of 720dp or greater, the sample log is always visible,
- * on other devices its visibility is controlled by an item on the Action Bar.
+ * on other devices it's visibility is controlled by an item on the Action Bar.
  */
 public class MainActivity extends SampleActivityBase {
 
